@@ -12,7 +12,7 @@ html, body {
 	padding: 0 auto;
 	font-family: "Times New Roman", arial, Verdana;
 	color: #162257;
-	background: #8592CB;
+	background: #e6f2ff;
 }
 
 
@@ -142,7 +142,7 @@ div {	margin: 0; padding: 0;}
  	height: 350px;
  	margin: 0;
  	
-	-webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.5, transparent), to(rgba(255, 255, 255, 0.2) ));
+	/*-webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.5, transparent), to(rgba(255, 255, 255, 0.2) ));*/
 }
 
 #pie_chart ul {
@@ -463,11 +463,11 @@ position: relative;
 	margin-right: 100px;
 	margin-left: 100px;
 	margin-bottom: 50px;
-	background-color: rgba(193,221,229,0.5);
+	background-color: rgba(204,230,255,0.5);
 }
 
 .pie{
 	margin-right: 150px;
 	margin-left: 150px;
-	background-color: rgba(193,221,229,0.5);
+	background-color: rgba(204,230,255,0.5);
 }
