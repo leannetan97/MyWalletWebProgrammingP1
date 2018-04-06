@@ -184,6 +184,7 @@ footer{
 
 
 
+
 @media only screen and (max-width: 971px) {
 #wallet img {
 	width: 150px;
@@ -234,30 +235,45 @@ tr {
 	font-size: 15px;
 }
 
+.finance {
+	width: 100%;
+	height: 15em;
+}
+
 .content{
-	text-align: center;
-	font-size:large;
-	float:left;
+	text-align: left;
+	font-size: x-large;
 }
 
 .content-heading{
 	font-style: bold;
-	font-size: 35px;
+	font-size: 40px;
 	font-family: 'Amaranth', sans-serif;
 }
 
 .content-font{
-	clear: left;
-	font-size: 25px;
-}
+	font-size: 30px;
+}	
+
 
 .content-background{
-	display: inline-block;
 	text-align: center;
+	padding-left: 40px;
 	width: 100%;
 }
 
-.finance {
-	width: 100%;
-	height: 15em;
+.display{
+	display:inline-block;
+}
+
+.cap {
+	background-color: rgba(0,0,0,0.6);
+	color: #FFFFFF;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: xx-small;
+}
+.cap-title {
+	font-size:x-small; 
+
 }
