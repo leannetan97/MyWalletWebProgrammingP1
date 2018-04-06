@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>MyGoal</title>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Itim|Overpass" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amaranth" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+<!-- OWN JS and CSS -->
+    <link rel="stylesheet" type="text/css" href="myWalletcss.css">    
+</head>
+
+
+
+<body>
+<!--bootstrap for navbar-->
+  <nav class="navbar navbar-inverse navbar-fixed-top" id="nav">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <!-- Collapse button -->
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <!-- BrandName -->
+           <a class="navbar-brand" href="#"><span><img class="img-responsive2" alt="myWallet LOGO" src="wallet.png" width="25px" height="25px">&nbsp;&nbsp;MyWallet</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="home.html">Home</a></li>
+              <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                   <li><a href="#">Page 1-1</a></li>
+                   <li><a href="#">Page 1-2</a></li>
+                   <li><a href="#">Page 1-3</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Page 2</a></li>
+            </ul>
+            <!-- RIGHT HAND NAVBAR -->
+            <ul class="nav navbar-nav navbar-right">
+               <li><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+               <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+        </div>
+  </nav>
+
+<!-- ---------------------- -->
+
+<main>
+  <div class="goal">
+  <table>    
+    <tbody>
+      <tr>
+       <td><h1 id="demo" ></h1>
+       <script>var d = new Date();document.getElementById("demo").innerHTML = d.toDateString();</script>
+     </td>
+        <td>
+        <h2>My Goal </h2>
+        <h1>RM1400.00</h1>
+        <button> edit </button>
+        </td>
+      </tr>
+
+      <tr >
+        <td class="center" style="background-color: #E6B0AA">
+        <h2>Actual spent</h2>
+        <h1>RM560.00</h1>
+        <p>40%</p>
+        </td>
+
+        <td class="center" style="background-color: #A9DFBF">
+        <h2>Remianing Budget</h2>
+        <h1>RM840.00</h1>
+        <p>60%</p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+<!-- ---------------------- -->
+<!-- Footer -->
+<footer>
+   <i class="fa fa-phone"></i> &nbsp;+603-333 8888 <br>
+  <span class="glyphicon glyphicon-envelope"></span>&nbsp; <a href="mailto:me@gmail.com">myWallet@gmail.com</a><br>
+  <div class="w3-xlarge">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+ </div>
+ Copyright &copy; 2018 My Wallet
+</footer>
+
+<script type="text/javascript" src="myWalletjs.js"></script>
+</body>
+</html>
