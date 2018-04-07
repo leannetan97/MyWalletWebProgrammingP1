@@ -140,7 +140,7 @@ footer{
 	padding-bottom: 60px;
 	display: inline-block;
 	text-align: left;
-	font-size: x-large;
+	font-size: large;
 }
 
 .content-background{
@@ -167,9 +167,24 @@ footer{
 	font-size: 30px;
 	font-style: normal;
 }
-
 .display{
+	display: inline-block;
+}
+
+.display_function{
 	display:inline-block;
+	font-size: large;
+	margin-left: 20px;
+}
+
+.display_function:hover{
+	display:inline-block;
+	padding-right: 50px;
+	padding-left: 50px; 
+	cursor: pointer;
+	background-color: rgba(200,217,255,0.2);
+	content-size:80px;
+	font-variant: small-caps;
 }
 
 /*external button*/
