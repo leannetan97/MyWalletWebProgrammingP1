@@ -4,6 +4,8 @@
 	<title>MyWallet</title>
 	<meta charset="utf-8">
   	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+    <meta name="google-signin-scope" content="profile email">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Itim|Overpass" rel="stylesheet">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -14,13 +16,15 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>  
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+
     <!-- OWN JS and CSS -->
   	
   	<link rel="stylesheet" type="text/css" href="myWalletcss.css">
 
     <style type="text/css">
       .jumbotron{
-          padding:60px 60px 60px 60px; 
+          padding:50px 60px 60px 60px; 
           margin-top:80px;
           margin-bottom: 80px;
           background-color: #e6f2ff;
@@ -66,14 +70,13 @@
 
 <!-- ---------LOGO------------- -->
 	<table>
-    <tr id="tableMyWallet">
-      <td id="wallet"><img src="wallet.png" alt="wallet"></td>
-      <td class="nameandslogan"><h1 id="name">My Wallet</h1>
-        <h1 id="slogan">Plan for Your Future</h1>
+    <tr class="display">
+      <td  class="display" id="wallet" rowspan="2"><img src="wallet.png" alt="wallet"></td>
+      <td class="nameandslogan"><h1 id="name">&nbsp;My Wallet</h1>
+        <h1 id="slogan">&nbsp;Plan for Your Future</h1>
       </td>
     </tr>
   </table>
-
   <p id="flowingword">Trust us. We provide the best service.</p>
 
 <!-- ---------main------------- -->
@@ -90,7 +93,7 @@
         <td class="container jumbotron col-lg-5">
         <h2> Log in </h2>
         <form><!-- NEED TO PUT ACTION AND METHOD-->
-        <div class="form-group">
+        <div class="form-group" style="margin-top: 1.5em">
           <label for="email">Email:</label>
           <input type="email" class="form-control" name="email" id="email" placeholder="Email" required="required">
         </div>
@@ -108,8 +111,12 @@
         <!-- 1st row 2ndcolumn -->
         <td class="container jumbotron col-lg-4">
           <div>
-            <p>Don't have an account?<br>Welcome to <b>My Wallet!<b><br>Create one to <b>plan for your future!<b><br></p>
-            <a href="signup.html"><button type="button" class="btn btn-info">Sign Up Now</button>
+            <p>Don't have an account?<br>Welcome to <b>My Wallet!<b><br>Create one to plan for your future!</b><br></p>
+            <a href="signup.html"><button type="button" class="btn btn-info">Sign Up Now</button></a>
+          </div> 
+          <div>
+            <p><button class="loginBtn loginBtn--google" data-onsuccess="onSignIn">Login with Google</button>
+            </p></div>
           </div>
         </td>
       </tr>
