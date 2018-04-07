@@ -13,6 +13,7 @@ html, body {
 	font-family: "Times New Roman", arial, Verdana;
 	color: #162257;
 	background: #e6f2ff;
+	min-width: 700px;
 }
 
 
@@ -51,15 +52,15 @@ div {	margin: 0; padding: 0;}
 /* Label and percentage data start */
 #labels {
 	position: absolute;
-	left: 750px;
-	top: 300px;
+	left: 550px;
+	top: 200px;
 	width: 120px;
 }
 
 #percentage_wrapper {
 	position: absolute;
-	left: 900px;
-	top: 300px;
+	left: 700px;
+	top: 200px;
 	width: 50px;
 	height: 124px;
 	overflow: visible;
@@ -470,4 +471,5 @@ position: relative;
 	margin-right: 150px;
 	margin-left: 150px;
 	background-color: rgba(204,230,255,0.5);
+	position: relative;
 }
