@@ -59,22 +59,7 @@
 
 <!-- ---------------------- -->
 
-<!-- LOGO-->
-	<table>
-		<tr class="display">
-			<td  class="display" id="wallet" rowspan="2"><img src="wallet.png" alt="wallet"></td>
-      <td class="nameandslogan"><h1 id="name">&nbsp;My Wallet</h1>
-        <h1 id="slogan">&nbsp;Plan for Your Future</h1>
-      </td>
-		</tr>
-	</table>
-<!-- TESTING -->
-<!--   <div id="logo-background" class="container">
 
-        <p><img src="wallet.png" alt="wallet"><span id="name" class="nameandslogan" id="wallet">
-          &nbsp;My Wallet <br><span id="slogan">&nbsp;Plan for Your Future</span></span></p>
-</div> -->
-	<p id="flowingword">Trust us. We provide the best service.</p>
 
 <!-- ---------------------- -->
 
@@ -92,12 +77,8 @@
 </table>
 <br>
 
-<button onclick="myCreateFunction()">Add row</button>
 
-
-
-
-
+<button onclick="myCreateFunction()" type="button" class="btn btn-success">Add row</button>
 
 <script>
 function myCreateFunction() {
@@ -117,7 +98,7 @@ function myCreateFunction() {
                         <option value="entertainment">Entertainment</option>
                         <option value="others">Others</option>
                       </select>`;
-    cell4.innerHTML = '<button onclick="myDeleteFunction(this)">Del</button>';
+    cell4.innerHTML = '<button onclick="myDeleteFunction(this)" type="button" class="btn btn-danger">Del</button>';
 }
 
 function myDeleteFunction(element) {
