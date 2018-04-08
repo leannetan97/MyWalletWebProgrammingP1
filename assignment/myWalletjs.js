@@ -37,6 +37,17 @@ function validate_Pwd(){
 }
 };
 
+//JS redirect function page
+function link_page(clicked_id){
+	if(clicked_id == "goals"){
+ 	location.href = 'goal.html';
+}else if(clicked_id == "expenses"){
+	location.href = 'expenses.html';
+}else if(clicked_id == "reports"){
+	location.href = 'report.html';
+}
+};
+
 
  window.addEventListener("load",function(){
  	console.log("load");
@@ -47,7 +58,14 @@ function validate_Pwd(){
  		}
  		return false;
  	});
+
+ 	// var goals = document.querySelector("#goals"); 
+ 	// goals.addEventListener("mouseover",function (event) {
+ 	//        goals.className = "display:hover";    
+ 	// }); 
 });
+
+
 
 // gapi.load('auth2',function(){
 // 	gapi.auth2.init();
