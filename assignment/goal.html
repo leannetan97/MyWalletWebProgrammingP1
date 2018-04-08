@@ -17,7 +17,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 
 <!-- OWN JS and CSS -->
-    <link rel="stylesheet" type="text/css" href="goalcss.css">    
+    <link rel="stylesheet" type="text/css" href="goalall.css">    
 </head>
 
 
@@ -35,12 +35,12 @@
                 <span class="icon-bar"></span>
               </button>
               <!-- BrandName -->
-           <a class="navbar-brand" href="Login_home.html"><span><img class="img-responsive2" alt="myWallet LOGO" src="wallet.png" width="25px" height="25px">&nbsp;&nbsp;MyWallet</span></a>
+           <a class="navbar-brand" href="#"><span><img class="img-responsive2" alt="myWallet LOGO" src="wallet.png" width="25px" height="25px">&nbsp;&nbsp;MyWallet</span></a>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-              <li><a href="Login_home.html">Home</a></li>
-              <li class="dropdown active"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Functions<span class="caret"></span></a>
+              <li class="active"><a href="home.html">Home</a></li>
+              <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Functions<span class="caret"></span></a>
                 <ul class="dropdown-menu">
                    <li><a href="goal.html" class="active">Set Goals</a></li>
                    <li><a href="expenses.html">Manage Expenses</a></li>
@@ -51,43 +51,102 @@
             </ul>
             <!-- RIGHT HAND NAVBAR -->
             <ul class="nav navbar-nav navbar-right">
-               <li><a href="home.html"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+               <li><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+               <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
             </ul>
         </div>
   </nav>
 
 <!-- ---------------------- -->
 
-<main>
-  <div class="goal">
-  <table>    
-    <tbody>
+<div class="dailyform">
+  <p id="smallWalletnName"> <img src="wallet.png" alt="MyWallet LOGO" title="My Wallet"> &nbsp; My Wallet</p>
+  <h2>My Goals</h2>
+
+<table id="goalTable">        
+  <tr>
+    <td id="typegoal"><input type="text" id="text" name="text" value="Travel to Taiwan"></td>
+    <td><button onclick="window.location.href='goal.html'" type="button" class="btn btn-default">Select</button></td>
+    <td><button onclick="myDeleteFunction(this)" type="button" class="btn btn-danger">Del</button></td>
+  </tr>
+  <tr>
+    <td id="typegoal"><input type="text" id="text" name="text" value="Buy a House"></td>
+    <td><button onclick="window.location.href='goalall2.html'" type="button" class="btn btn-default">Select</button></td>
+    <td><button onclick="myDeleteFunction(this)" type="button" class="btn btn-danger">Del</button></td>
+  </tr>
+  <tr>
+    <td id="typegoal"><input type="text" id="text" name="text" value="Sky Diving"></td>
+    <td><button onclick="window.location.href='goalall3.html'" type="button" class="btn btn-default">Select</button></td>
+    <td><button onclick="myDeleteFunction(this)" type="button" class="btn btn-danger">Del</button></td>
+  </tr>
+</table>
+
+
+
+<button onclick="myCreateFunction()" type="button" class="btn btn-success">Add row</button>
+
+<!-- ---------------------- -->
+<script>
+function myCreateFunction() {
+    var table = document.getElementById("goalTable");
+    var row = table.insertRow(table.rows.length);
+    var cell1 = row.insertCell(0);
+    var cell2 = row.insertCell(1);
+    var cell3 = row.insertCell(2);
+    cell1.innerHTML = '<input type="text" id="text" name="text" placeholder="Type Goal">';
+    cell2.innerHTML = '<button onclick="myDeleteFunction(this)" type="button" class="btn btn-default">Select</button>';
+    cell3.innerHTML = '<button onclick="myDeleteFunction(this)" type="button" class="btn btn-danger">Del</button>';
+}
+
+function myDeleteFunction(element) {
+    var rowNumber = element.closest('tr').rowIndex;
+    document.getElementById("goalTable").deleteRow(rowNumber);
+}
+</script>
+
+</div>
+
+<!-- ---------------------- -->
+<div class="goal">
+    <table>    
       <tr>
-       <td><h1 id="demo" ></h1>
-       <script>var d = new Date();document.getElementById("demo").innerHTML = d.toDateString();</script>
-     </td>
-        <td>
-        <h2>My Goal </h2>
-        <h1>RM1400.00</h1>
-        <button> edit </button>
+        <td colspan="2">
+          <div style="font-size: 35px; padding-bottom: 15px;  padding-top: 10px;">
+          Target Goal
+          </div>
+          <div style="float: left; margin-left: 300px;">
+          <img src="goal1.png" alt="Target Goal" width="100" height="100">
+          </div>
+          <div style="font-size: 70px; margin-right: 360px;">
+            RM1400
+          </div>
+          
+          
         </td>
       </tr>
 
-      <tr >
-        <td class="center" style="background-color: #E6B0AA">
-        <h2>Actual spent</h2>
-        <h1>RM560.00</h1>
-        <p>40%</p>
+      <tr>
+        <td class="center">
+          <div style="font-size: 35px; padding-bottom: 15px;">
+            Money Saved 
+          </div>
+          <h1 >RM850.00</h1>
+          <p>60%</p>
         </td>
-
-        <td class="center" style="background-color: #A9DFBF">
-        <h2>Remaining Budget</h2>
-        <h1>RM840.00</h1>
-        <p>60%</p>
+        <td class="center">
+        <div style="font-size: 35px; padding-bottom: 15px;">
+            Money Required
+          </div>
+          <h1 >RM550.00</h1>
+          <p>40%</p>
         </td>
       </tr>
-    </tbody>
+
+    
   </table>
+  </div>
+
+
 
 <!-- ---------------------- -->
 <!-- Footer -->
