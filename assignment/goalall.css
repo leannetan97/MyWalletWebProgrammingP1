@@ -5,6 +5,10 @@
 	
 }
 
+html,body{
+	background: #e6f2ff;
+}
+
 #nav {
 	background-color: #223C54;
 	margin: 0;
@@ -152,7 +156,8 @@ input[type=text] {
 .dailyform {
 	margin: 100px;
     border-radius: 5px;
-    background-color: #f2f2f2;
+    /*background-color: #f2f2f2;*/
+    background-color: rgba(204,230,255,0.5);
     padding: 50px;
 }
 
@@ -207,7 +212,7 @@ input[type=text] {
 .goal table td{
 	vertical-align:center;
 	text-align: center;
-   	border: 5px solid white;
+   	border: 5px solid #e6f2ff;
  }
 
 .goal table tr{
