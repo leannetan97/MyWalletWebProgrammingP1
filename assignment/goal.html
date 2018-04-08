@@ -5,6 +5,7 @@
   <title>MyGoal</title>
   <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="wallet.ico">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Itim|Overpass" rel="stylesheet">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -93,7 +94,7 @@ function myCreateFunction() {
     var cell1 = row.insertCell(0);
     var cell2 = row.insertCell(1);
     var cell3 = row.insertCell(2);
-    cell1.innerHTML = '<input type="text" id="text" name="text" placeholder="Type Goal">';
+    cell1.innerHTML = '<input type="text" id="text" name="text" placeholder="Enter Goal">';
     cell2.innerHTML = '<button onclick="myDeleteFunction(this)" type="button" class="btn btn-default">Select</button>';
     cell3.innerHTML = '<button onclick="myDeleteFunction(this)" type="button" class="btn btn-danger">Del</button>';
 }
@@ -117,8 +118,8 @@ function myDeleteFunction(element) {
           <div style="float: left; margin-left: 300px;">
           <img src="goal1.png" alt="Target Goal" width="100" height="100">
           </div>
-          <div style="font-size: 70px; margin-right: 360px;">
-            RM1400
+          <div style="font-size: 70px; margin-right: 360px;" >
+          <p>RM<span id="TargetGoal">1400.00</span></p>
           </div>
           
           
@@ -130,15 +131,15 @@ function myDeleteFunction(element) {
           <div style="font-size: 35px; padding-bottom: 15px;">
             Money Saved 
           </div>
-          <h1 >RM850.00</h1>
-          <p>60%</p>
+          <h1>RM<span id="MoneySaved">850.00</span></h1>
+          <p id="msPercent">0%</p>
         </td>
         <td class="center">
         <div style="font-size: 35px; padding-bottom: 15px;">
             Money Required
           </div>
-          <h1 >RM550.00</h1>
-          <p>40%</p>
+          <h1>RM<span id="MoneyRequired">550.00</span></h1>
+          <p id="mrPercent">0%</p>
         </td>
       </tr>
 
@@ -162,6 +163,6 @@ function myDeleteFunction(element) {
  Copyright &copy; 2018 My Wallet
 </footer>
 
-<script type="text/javascript" src="myWalletjs.js"></script>
+<script type="text/javascript" src="goaljs.js"></script>
 </body>
 </html>
