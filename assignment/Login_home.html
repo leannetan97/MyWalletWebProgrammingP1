@@ -17,7 +17,17 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 
 <!-- OWN JS and CSS -->
-    <link rel="stylesheet" type="text/css" href="myWalletcss.css">    
+    <link rel="stylesheet" type="text/css" href="myWalletcss.css">
+
+     <style type="text/css">
+      .jumbotron{
+          padding:50px 60px 60px 50px;
+          margin-top: 0px;
+          margin-bottom: 0px;
+          background:url(jumbotron1.png) no-repeat;
+          background-size:100% 100%;
+      }
+    </style>    
 </head>
 
 
@@ -40,6 +50,8 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
               <li class="active"><a href="Login_home.html">Home</a></li>
+              <li><a id="info_home">About Us</a></li>
+              <li><a id="nav_Ser_home">Services</a></li>
               <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Functions<span class="caret"></span></a>
                 <ul class="dropdown-menu">
                    <li><a href="goal.html">Set Goals</a></li>
@@ -47,7 +59,6 @@
                    <li><a href="report.html">Analyze Expenses</a></li>
                 </ul>
               </li>
-              <li><a href="#">Page 2</a></li>
             </ul>
             <!-- RIGHT HAND NAVBAR -->
             <ul class="nav navbar-nav navbar-right">
@@ -129,6 +140,17 @@
 </div>
 <!-- ---------------------- -->
 <main>
+  <div class="container-fluid jumbotron">
+    <div class="info-div" id="intro">
+    <h1 class="content-heading aboutus" > About Us </h1>
+    <p class="content-font">Do you ever feel irritated every time when the monthly calendar comes to its end? We felt and understood it very well. It is the time when the month ends, your saving ends too.</p>
+    <p class="content-font"><b>My Wallet</b> is an online personal financial management platform, established in 2018, aimed to aid your financial plans manangement in a simple, nice and structured way.</p>
+    <p class="content-font">Save your bucks on seeking advice from financial manangement experts/advisors, as we warmly provide financial goals setting, daily expenses manangement and monthly expenses analyzing as our basic services to you, for <b>FREE!</b></p>
+    <p class="content-font">Join <b>My Wallet</b> now and start planning for your future!</p>
+    <a id="try_now"><button class="btn btn-success btn-lg">Try Now !</button></a>
+  </div>
+ </div>
+<div id="Services">
   <div class="container-fluid content-background">
   <h1 class="content-heading">Try Now !</h1>  
     <div class="content">
@@ -156,6 +178,7 @@
         </ul>
     </div>
   </div>
+</div>
 </main>
 
 

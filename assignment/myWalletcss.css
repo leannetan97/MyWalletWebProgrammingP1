@@ -121,6 +121,13 @@ table {
 #loginTbl{
 	background-color: #e6f2ff;
 }
+
+.info-div{	
+	background-color:rgba(239,239,255,0.4);
+	background-size: 100% 100%;
+	padding: 40px 60px;
+}
+
 h2{
 	font-size: 28px;
 }
@@ -142,8 +149,11 @@ footer{
 	text-align: left;
 	font-size: large;
 }
-
+#info_home,#info,#nav_Ser, #nav_Ser_home:hover{
+	cursor: pointer;
+}
 .content-background{
+	padding-top: 20px;
 	background-color: #e6f2ff;
 	text-align: center;
 }
@@ -156,7 +166,10 @@ footer{
 }
 
 .content-heading{
-	padding-top:70px; 
+	padding-top:30px;
+	padding-bottom: 30px;
+	margin-top: 0px; 
+	margin-bottom: 0px;
 	font-style: bold;
 	font-size: 70px;
 	font-family: 'Amaranth', sans-serif;
@@ -329,6 +342,8 @@ table {
 
 .content-font{
 	font-size: 30px;
+	text-align: justify;
+    text-justify: inter-word;
 }	
 
 
