@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>MyWallet</title>
+  <title>MyGoal</title>
   <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -17,7 +17,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 
 <!-- OWN JS and CSS -->
-    <link rel="stylesheet" type="text/css" href="expenses.css">    
+    <link rel="stylesheet" type="text/css" href="goalall.css">    
 </head>
 
 
@@ -59,27 +59,33 @@
 
 <!-- ---------------------- -->
 
-
-
-<!-- ---------------------- -->
-
 <div class="dailyform">
   <p id="smallWalletnName"> <img src="wallet.png" alt="MyWallet LOGO" title="My Wallet"> &nbsp; My Wallet</p>
-  <h2 id="dailyexpenses">Manage Daily Expenses</h2>
+  <h2>My Goals</h2>
 
-<table id="expensesTable">        
+<table id="goalTable">        
   <tr>
-    <th>Date</th>
-    <th>Amount (Rm)</th>
-    <th>Category</th>
-    <th></th>
+    <td id="typegoal"><input type="text" id="text" name="text" value="Travel to Taiwan"></td>
+    <td><button onclick="window.location.href='goalall.html'" type="button" class="btn btn-default">Select</button></td>
+    <td><button onclick="myDeleteFunction(this)" type="button" class="btn btn-danger">Del</button></td>
+  </tr>
+  <tr>
+    <td id="typegoal"><input type="text" id="text" name="text" value="Buy a House"></td>
+    <td><button onclick="window.location.href='goalall2.html'" type="button" class="btn btn-default">Select</button></td>
+    <td><button onclick="myDeleteFunction(this)" type="button" class="btn btn-danger">Del</button></td>
+  </tr>
+  <tr>
+    <td id="typegoal"><input type="text" id="text" name="text" value="Sky Diving"></td>
+    <td><button onclick="window.location.href='goalall3.html'" type="button" class="btn btn-default">Select</button></td>
+    <td><button onclick="myDeleteFunction(this)" type="button" class="btn btn-danger">Del</button></td>
   </tr>
 </table>
-<br>
+
 
 
 <button onclick="myCreateFunction()" type="button" class="btn btn-success">Add row</button>
 
+<!-- ---------------------- -->
 <script>
 function myCreateFunction() {
     var table = document.getElementById("goalTable");
@@ -87,36 +93,58 @@ function myCreateFunction() {
     var cell1 = row.insertCell(0);
     var cell2 = row.insertCell(1);
     var cell3 = row.insertCell(2);
-    var cell4 = row.insertCell(3);
-    cell1.innerHTML = '<input type="date" id="date" name="date" placeholder="Date">';
-    cell2.innerHTML = '<input type="number" id="amount" name="amount" placeholder="Amount">';
-    cell3.innerHTML = `<select id="category" name="category">
-                        <option value="groceries">Groceries</option>
-                        <option value="food">Food</option>
-                        <option value="transport">Transport</option>
-                        <option value="shopping">Shopping</option>
-                        <option value="entertainment">Entertainment</option>
-                        <option value="others">Others</option>
-                      </select>`;
-    cell4.innerHTML = '<button onclick="myDeleteFunction(this)" type="button" class="btn btn-danger">Del</button>';
+    cell1.innerHTML = '<input type="text" id="text" name="text" placeholder="Type Goal">';
+    cell2.innerHTML = '<button onclick="myDeleteFunction(this)" type="button" class="btn btn-default">Select</button>';
+    cell3.innerHTML = '<button onclick="myDeleteFunction(this)" type="button" class="btn btn-danger">Del</button>';
 }
 
 function myDeleteFunction(element) {
     var rowNumber = element.closest('tr').rowIndex;
-    document.getElementById("expensesTable").deleteRow(rowNumber);
+    document.getElementById("goalTable").deleteRow(rowNumber);
 }
 </script>
 
-
-
 </div>
 
-
-
-
-
 <!-- ---------------------- -->
+<div class="goal">
+    <table>    
+      <tr>
+        <td colspan="2">
+          <div style="font-size: 35px; padding-bottom: 15px;  padding-top: 10px;">
+          Target Goal
+          </div>
+          <div style="float: left; margin-left: 300px;">
+          <img src="goal1.png" alt="Target Goal" width="100" height="100">
+          </div>
+          <div style="font-size: 70px; margin-right: 360px;">
+            RM50000
+          </div>
+          
+          
+        </td>
+      </tr>
 
+      <tr>
+        <td class="center">
+          <div style="font-size: 35px; padding-bottom: 15px;">
+            Money Saved 
+          </div>
+          <h1 >RM27500.00</h1>
+          <p>55%</p>
+        </td>
+        <td class="center">
+        <div style="font-size: 35px; padding-bottom: 15px;">
+            Money Required
+          </div>
+          <h1 >RM22500.00</h1>
+          <p>45%</p>
+        </td>
+      </tr>
+
+    
+  </table>
+  </div>
 
 
 

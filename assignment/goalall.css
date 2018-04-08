@@ -1,0 +1,357 @@
+* {
+	margin-left: : 10px;
+	padding: 0;
+	font-family: 'Nunito', sans-serif;
+	
+}
+
+#nav {
+	background-color: #223C54;
+	margin: 0;
+}
+
+
+#wallet img{
+	width: 350px;
+	height: auto;
+	padding: 0;
+	margin: 0;
+	margin-left: 200px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	float: left;
+	/*edited*/
+	/*vertical-align: top;*/
+
+}
+
+#slogan {
+	font-family: 'Itim', cursive;
+	font-size: 50px;
+}
+
+#name {
+	font-family: 'Overpass', sans-serif;
+	font-size: 60px;
+}
+
+.nameandslogan {
+	color: #FFFFFF;
+	float: right;
+	margin-left: 20px;
+	margin-top: 100px;
+	/*edited*/
+	/*text-align: center; */
+	
+}
+
+
+table {
+	margin-top: 50px;
+	width: 100%;
+	background-color: #DCEDF2;
+}
+
+
+/*TESTING*/
+/*#logo-background {
+	margin-top: 50px;
+	width: 100%;
+	background-color: #98B8D5;
+	vertical-align: middle;
+	display: inline-block;
+}*/
+
+#flowingword {
+	text-align: center;
+	background-color: #98B8D5;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	font-family: 'Alegreya Sans SC', sans-serif;
+	font-size: 20px;
+	margin: 0;
+
+}
+
+.cap {
+	/*background-color: transparent;*/
+	background-color: rgba(0,0,0,0.2);
+	color: #FFFFFF;
+}
+
+.finance {
+	width: 100%;
+	height: 25em;
+}
+
+.aboutus {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	height: 20%;
+}
+
+#smallQuestion {
+	font-style: italic;
+	font-size: small;
+}
+
+#smallWalletnName {
+	text-align: center;
+	font-family: 'Overpass', sans-serif;
+	font-size: 30px;
+}
+
+#smallWalletnName img {
+	align-content: center;
+	width: 40px;
+	height: 40px;
+	}
+
+#loginTbl{
+	background-color: #e6f2ff;
+}
+
+h2{
+	font-size: 28px;
+}
+
+footer{
+	padding-top: 30px;
+	padding-bottom: 30px;
+	text-align: center;
+	font-family: 'Nunito', sans-serif;
+	font-size: small;
+	background-color: #98B8D5;
+}
+
+
+#mygoals {
+	margin-top: 100px;
+	text-align: center;
+}
+
+table {
+	margin-top: 20px;
+	width: 100%;
+	background-color: #98B8D5;
+}
+
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+.dailyform {
+	margin: 100px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 50px;
+}
+
+
+#goalTable td {
+	padding: 10px 20px;
+
+}
+
+.btn-success {
+	margin-top: 20px;
+	
+}
+
+#typegoal {
+	width: 90%;
+}
+
+
+
+/*Set goal start*/
+.goals{
+	font-size: larger;
+}
+
+.button {
+	position: relative;
+    background-color:  #D6DBDF;
+    border: none;
+    color: white;
+    padding: 7px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    margin-left: 610px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+
+.button5 {
+	border-radius: 30%;
+}
+
+.img{
+	padding-left: 50px;
+	padding-top: 50px;
+}
+
+
+.goal table td{
+	vertical-align:center;
+	text-align: center;
+   	border: 5px solid white;
+ }
+
+.goal table tr{
+	padding-top: 50px;
+	height:250px;
+	width: 100%;
+}
+
+.goal h1{
+	font-size: 70px;
+}
+
+.goal h2{
+	font-size: 35px;
+}
+
+.center p{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 150px;
+    width: 150px;
+    line-height: 150px;
+
+    -moz-border-radius: 50%; /* or 50% */
+    border-radius: 50%; /* or 50% */
+
+    background-color: white;
+    color: #34495E;
+    font-size: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.center {
+	width: 50%;
+}
+
+footer {
+	margin-top: 70px;
+}
+
+/*set goal end*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 971px) {
+#wallet img {
+	width: 150px;
+	height: auto;
+	padding: 0;
+	margin: 0;
+	margin-left: 100px;
+	margin-top: 30px;
+	margin-bottom: auto;
+	float: left;
+}
+
+#slogan {
+	font-family: 'Itim', cursive;
+	font-size: 30px;
+}
+
+#name {
+	font-family: 'Overpass', sans-serif;
+	font-size: 40px;
+}
+
+.nameandslogan {
+	color: #FFFFFF;
+	float: right;
+	margin-right:30px;
+	margin-top: 50px;
+	text-align: center;
+}
+
+
+table {
+	width: 100%;
+	background-color: #98B8D5;
+}
+
+tr {
+	display: inline-block;
+	padding-top: 20px; 
+}
+
+#flowingword {
+	text-align: center;
+	background-color: #98B8D5;
+	padding-top: 30px;
+	padding-bottom: 20px;
+	font-family: 'Alegreya Sans SC', sans-serif;
+	font-size: 15px;
+}
+
+.content{
+	text-align: center;
+	font-size:large;
+	float:left;
+}
+
+.content-heading{
+	font-style: bold;
+	font-size: 35px;
+	font-family: 'Amaranth', sans-serif;
+}
+
+.content-font{
+	clear: left;
+	font-size: 25px;
+}
+
+.content-background{
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+}
+
+.finance {
+	width: 100%;
+	height: 15em;
+}
+
+.date{
+	float: right; 
+	font-size: medium; 
+	padding-right: 50px; 
+	font-weight: bold;
+}
+
