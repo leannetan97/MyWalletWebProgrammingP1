@@ -120,9 +120,92 @@
       </div>
     </div>
   
+<script>
+(function(window, document, undefined) {
 
+    var chart_data = {
+      labels: ['Food','Clothing','Groceries','Transportation','Others'],
+      datasets: [
+        {
+          label: 'January',
+          data: [60.14,24.98,7.14,5,10,2.66],
+          backgroundColor: 'rgba(255,0,0,0.5)'
+        },
+        {
+          label: 'February',
+          data: [61.79,24.39,6.03,4.91,2.73],
+          backgroundColor: 'rgba(0,0,255,0.5)'
+        }
+        {
+          label: 'March',
+          data: [60.14,24.98,7.14,5,10,2.66],
+          backgroundColor: 'rgba(255,0,0,0.5)'
+        },
+        {
+          label: 'April',
+          data: [61.79,24.39,6.03,4.91,2.73],
+          backgroundColor: 'rgba(0,0,255,0.5)'
+        },
+        {
+          label: 'May',
+          data: [60.14,24.98,7.14,5,10,2.66],
+          backgroundColor: 'rgba(255,0,0,0.5)'
+        },
+        {
+          label: 'June',
+          data: [61.79,24.39,6.03,4.91,2.73],
+          backgroundColor: 'rgba(0,0,255,0.5)'
+        },
+        {
+          label: 'July',
+          data: [60.14,24.98,7.14,5,10,2.66],
+          backgroundColor: 'rgba(255,0,0,0.5)'
+        },
+        {
+          label: 'August',
+          data: [61.79,24.39,6.03,4.91,2.73],
+          backgroundColor: 'rgba(0,0,255,0.5)'
+        },
+        {
+          label: 'September',
+          data: [60.14,24.98,7.14,5,10,2.66],
+          backgroundColor: 'rgba(255,0,0,0.5)'
+        },
+        {
+          label: 'October',
+          data: [61.79,24.39,6.03,4.91,2.73],
+          backgroundColor: 'rgba(0,0,255,0.5)'
+        },
+        {
+          label: 'November',
+          data: [68.28,6.83,2.35,3.89,2.27],
+          backgroundColor: 'rgba(255,0,0,0.5)'
+        },
+        {
+          label: 'December',
+          data: [79.68,14.56,3.20,2.36,1.15],
+          backgroundColor: 'rgba(0,0,255,0.5)'
+        }
+      ]
+    }
 
-
+    var ctx = document.getElementById('canvas').getContext('2d')
+    window.my_chart = new Chart(ctx, {
+      type: 'pie',
+      data: chart_data,
+      options: {
+        responsive: true,
+        legend: {
+          position: 'top'
+        },
+        title: {
+          display: true,
+          text: 'Monthly Summary Report'
+        }
+      }
+    })
+})(window, document)
+</script>
 
 
     <!--selection of month-->
