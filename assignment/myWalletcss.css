@@ -141,7 +141,9 @@ footer{
 	background-color: #98B8D5;
 	/*width: 100%;*/
 }
-
+#info_home,#info_login,#info,#nav_Ser, #nav_Ser_home,#nav_Ser_login:hover{
+	cursor: pointer;
+}
 .content{
 	padding-top: 30px;
 	padding-bottom: 60px;
@@ -149,9 +151,7 @@ footer{
 	text-align: left;
 	font-size: large;
 }
-#info_home,#info,#nav_Ser, #nav_Ser_home:hover{
-	cursor: pointer;
-}
+
 .content-background{
 	padding-top: 20px;
 	background-color: #e6f2ff;

@@ -16,7 +16,6 @@ html, body {
 	min-width: 700px;
 }
 
-
 div {	margin: 0; padding: 0;}
 
 hr { 
@@ -28,6 +27,7 @@ hr {
     border-style: inset;
     border-width: 10px;
 }
+
 
 #wrapper {
 	position:absolute;

@@ -13,7 +13,9 @@ html,body{
 	margin: 0;
 }
 
-
+#info_home,#info_login,#info,#nav_Ser, #nav_Ser_home,#nav_Ser_login:hover{
+	cursor: pointer;
+}
 #wallet img{
 	width: 300px;
 	height: auto;
