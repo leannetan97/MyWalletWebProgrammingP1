@@ -59,6 +59,10 @@ hr {
 }
 /* Header end */
 
+.year{
+	padding-top: 75px;
+	padding-left: 455px;
+}
 /* Label and percentage data start */
 #labels {
 	position: absolute;
@@ -482,4 +486,5 @@ position: relative;
 	margin-left: 150px;
 	background-color: rgba(204,230,255,0.5);
 	position: relative;
+
 }
