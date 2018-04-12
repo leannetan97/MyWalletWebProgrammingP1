@@ -42,7 +42,7 @@ function link_page(clicked_id){
 }else if(clicked_id == "expenses"){
 	location.href = 'expenses.html';
 }else if(clicked_id == "reports"){
-	location.href = 'report.html';
+	location.href = 'report2017.html';
 }
 };
 
