@@ -111,6 +111,9 @@ function myEditFunction(element) {
     
     // when save change button clicked
     SaveChange.onclick = function(){
+    var goal= document.getElementById("editGoal").value;
+    var targetsaving = document.getElementById("targetSavingedit").value;
+    if(goal!= "" && targetsaving!= "" && targetsaving!=0){
     goals[rowNumber][0] = document.getElementById("editGoal").value;
     targetsavingedit = document.getElementById("targetSavingedit").value;
     goals[rowNumber][1]= targetsavingedit;
@@ -125,8 +128,10 @@ function myEditFunction(element) {
     // SET percentage into the table
     document.getElementById("mrPercent").innerHTML = ((parseInt(moneyRequired)/parseInt(targetsavingedit))*100).toFixed(0) + "%";
     document.getElementById("msPercent").innerHTML = ((parseInt(moneySave)/parseInt(targetsavingedit))*100).toFixed(0) + "%";
+ }else{
+     alert("Goal or target saving is empty");
  }
-}
+}}
 
 function mySelectFunction(element){
     var rowNumber = element.closest('tr').rowIndex;
