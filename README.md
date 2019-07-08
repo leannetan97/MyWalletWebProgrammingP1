@@ -1,4 +1,4 @@
-# Web Programming WIF2003 (Phase1)
+# My Wallet Web Programming WIF2003 (Phase1)
 <p>This website is named as My Wallet. For this phase, we are more focus on the front end inteface design and the full version will be develop during Phase 2: https://github.com/leannetan97/WebProgrammingP2 </p>
 
 <h2>About Us:</h2>
