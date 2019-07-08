@@ -1,5 +1,5 @@
-# Web Programming WIF2003
-<p>This website is named as My Wallet.</p>
+# Web Programming WIF2003 (Phase1)
+<p>This website is named as My Wallet. For this phase, we are more focus on the front end inteface design and the full version will be develop during Phase 2: https://github.com/leannetan97/WebProgrammingP2 </p>
 
 <h2>About Us:</h2>
 <p>My Wallet is an online personal financial management platform, established in 2018, aimed to aid your financial plans manangement in a simple, nice and structured way. 
